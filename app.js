@@ -4,7 +4,12 @@ const Discord = require('discord.js')
 const dsClient = new Discord.Client()
 
 // {"twitch_name": "discord_channel_id"}
-const CHANNELS = JSON.parse(process.env.CHANNELS)
+const CHANNELS = process.env.CHANNELS.split(',').reduce((acc, curr) => {
+  const splited = curr.split(':')
+  acc[splited[0]] = splited[1]
+  return acc
+}, {})
+console.log(CHANNELS)
 
 const BOT_TOKEN = process.env.BOT_TOKEN
 
