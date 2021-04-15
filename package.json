@@ -1,0 +1,21 @@
+{
+  "name": "twitch-discord-chat-forwarding",
+  "version": "1.0.0",
+  "description": "Script for forwarding chat messages from Twitch to Discord channel",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "twitch",
+    "discord",
+    "chat"
+  ],
+  "author": "iunki",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^12.5.1",
+    "express": "^4.17.1",
+    "tmi.js": "^1.5.0"
+  }
+}
